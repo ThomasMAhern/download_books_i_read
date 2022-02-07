@@ -113,7 +113,7 @@ books = ["The Mind's Eye",
 
 
 
-
+## Selenium
 # and then I tried better but less functionality
 
 
@@ -194,7 +194,7 @@ driver.close()
 
 
 
-
+## Playwright
 
 
 # and then I tried my hand at playwright
