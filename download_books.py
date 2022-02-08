@@ -248,3 +248,35 @@ async with async_playwright() as p:
     # dispose context once it is no longer needed.
     await context.close()
     await browser.close()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+# hooray learned about context managers.... or more specifically, how to get rid of one
+
+playwright = async_playwright().start()
+browser = playwright.chromium.launch()
+page = browser.new_page()
+page.goto("http://whatsmyuseragent.org/")
+page.screenshot(path="example.png")
+browser.close()
+playwright.stop()
+
+# is same as 
+
+async with async_playwright() as p:
+    browser = await p.chromium.launch(headless=False)
+    context = await browser.new_context(accept_downloads= True)
+    page = await context.new_page()
+    await page.goto('http://whatsmyuseragent.org/')
+    # await page.screenshot(path="example.png")
