@@ -261,6 +261,7 @@ async with async_playwright() as p:
 
 
 
+# from playwright.async_api import async_playwright
 
 # hooray learned about context managers.... or more specifically, how to get rid of one
 
@@ -279,4 +280,4 @@ async with async_playwright() as p:
     context = await browser.new_context(accept_downloads= True)
     page = await context.new_page()
     await page.goto('http://whatsmyuseragent.org/')
-    # await page.screenshot(path="example.png")
+    await page.screenshot(path="example.png")
