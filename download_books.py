@@ -227,9 +227,9 @@ async with async_playwright() as p:
     for book_title in books:
         try:
             await page.fill(xpath_search_bar, book_title) # take xpath and strings from books
-            await page.click(xpath_search_button);
-            await page.click(selector_first_result_button);
-            await page.click(xpath_download_button);
+            await page.click(xpath_search_button)
+            await page.click(selector_first_result_button)
+            await page.click(xpath_download_button)
 
             # download tricky bullshit
             async with page.expect_download() as download_info:
