@@ -279,5 +279,19 @@ async with async_playwright() as p:
     browser = await p.chromium.launch(headless=False)
     context = await browser.new_context(accept_downloads= True)
     page = await context.new_page()
+    await page.pause()   
     await page.goto('http://whatsmyuseragent.org/')
-    await page.screenshot(path="example.png")
+    
+    
+    
+    
+    
+    
+# omfg itll build it for you!!!
+playwright codegen wikipedia.org
+
+# or just add this and you can record 
+await page.pause()
+
+
+
