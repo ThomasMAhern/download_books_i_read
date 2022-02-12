@@ -204,7 +204,7 @@ website_to_visit = 'https://www.pdfdrive.com/'
 
 xpath_search_bar = 'id=q'
 xpath_search_button = '//*[@id="search-form"]/button/i'
-selector_first_result_button = 'body > div.dialog > div.dialog-main > div.dialog-left > div.files-new > ul > li:nth-child(1) > div > div > div.file-right > a'
+selector_first_result_button = 'div.files-new > ul > li:nth-child(1) > div > div > div.file-right > a'
 xpath_dropdown_button = '//*[@id="alternatives"]/div[1]/div/button'
 xpath_download_button = '//*[@id="download-button-link"]'
 xpath_get_pdf_button = '//*[@id="alternatives"]/div[1]/div/a'
